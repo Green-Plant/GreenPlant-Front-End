@@ -1,0 +1,15 @@
+<div class="overlay">
+    <div id="login-box">
+        <h1>GreenPlant</h1>
+        <form action="login.php" method="post">
+            <input type="text" name="email" placeholder="Email">
+            <br>
+            <input type="password" name="password" placeholder="Password">
+            <br><br>
+            <input type="submit" value="Login">
+            <br>
+            <p class="error-message" *ngIf="errorHidden">Incorrect email or password. Please try again.</p>
+        </form>
+        <a href="/signup">Don't have an account? Sign up</a>
+    </div>
+</div>
